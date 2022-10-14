@@ -194,10 +194,15 @@ Pod::Spec.new do |s|
   s.dependency 'AWHIJKPlayer'
   
   #高德地图
-  s.dependency 'AMap3DMap'
-  s.dependency 'AMapNavi'
-  s.dependency 'AMapSearch'
-  s.dependency 'AMapLocation'
+  #s.dependency 'AMap3DMap'
+  #s.dependency 'AMapNavi'
+  #s.dependency 'AMapSearch'
+  #s.dependency 'AMapLocation'
+  
+  s.dependency 'AMap3DMap', '6.9.0'
+  s.dependency 'AMapNavi', '6.9.1'
+  s.dependency 'AMapSearch', '6.9.0'
+  s.dependency 'AMapLocation', '2.6.2'
   s.dependency 'AWHBGaudeMapBus'
 
 end
