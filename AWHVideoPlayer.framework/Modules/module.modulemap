@@ -1,0 +1,6 @@
+framework module AWHVideoPlayer {
+  umbrella header "AWHVideoPlayer.h"
+
+  export *
+  module * { export * }
+}
