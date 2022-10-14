@@ -82,8 +82,8 @@ Pod::Spec.new do |s|
   #  部署目标。您可以选择在平台之后包含目标。
   #
 
-  s.platform     = :ios
-  # s.platform     = :ios, "9.0"
+  #s.platform     = :ios
+  s.platform     = :ios, "13.0"
 
   #  When using multiple platforms
   s.ios.deployment_target = "13.0"
@@ -124,6 +124,8 @@ Pod::Spec.new do |s|
   s.source_files = 'AWHVideoPlayer.framework/Headers/*h'
   s.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
   s.static_framework = true
+  
+  s.swift_version='5.0'
 
 
   # ――― Resources 资源――――――――――――――――――――――――――――――――――― #
@@ -170,10 +172,11 @@ Pod::Spec.new do |s|
   #  您可以包含多个依赖项以确保其正常工作。
 
    s.requires_arc = true
-   s.static_framework = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  #s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  #s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   s.dependency 'AWHBoneRuntime'
   s.dependency 'AWHBoneRouter'
@@ -192,6 +195,8 @@ Pod::Spec.new do |s|
   s.dependency 'MJRefresh'
   s.dependency 'AWHBoneResources'
   s.dependency 'AWHIJKPlayer'
+  s.dependency 'AWHReportModule'
+  s.dependency 'FQPhotoAlbum'
   
   #高德地图
   #s.dependency 'AMap3DMap'
