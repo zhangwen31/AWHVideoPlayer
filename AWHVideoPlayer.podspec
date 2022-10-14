@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   TODO: 添加描述内容
   }
 
-  s.homepage     = "https://gitee.com/zhangwen31/AWHVideoPlayer"
+  s.homepage     = "https://github.com/zhangwen31/AWHVideoPlayer"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -100,7 +100,7 @@ Pod::Spec.new do |s|
   #  #支持git、hg、bzr、svn和HTTP。
   #
 
-  s.source       = { :git => "https://gitee.com/zhangwen31/AWHVideoPlayer.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/zhangwen31/AWHVideoPlayer.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code 源代码――――――――――――――――――――――――――――――――― #
