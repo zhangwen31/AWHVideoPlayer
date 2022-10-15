@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <IJKMediaFramework/IJKMediaFramework.h>
-#import "AWHVPVideoPlayerModel.h"
+#import <AWHVideoPlayer/AWHVPVideoPlayerModel.h>
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^ReturnSelectTitle)(NSString *title,IJKFFMoviePlayerController *player);
 @interface AWHVPRealTimeCollectionViewCell : UICollectionViewCell

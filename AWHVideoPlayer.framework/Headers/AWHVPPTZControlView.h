@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AWHVPVideoPlayerModel.h"
+#import <AWHVideoPlayer/AWHVPVideoPlayerModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

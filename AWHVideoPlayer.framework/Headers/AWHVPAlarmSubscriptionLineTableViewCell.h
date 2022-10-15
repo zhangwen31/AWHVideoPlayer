@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AWHVPAlarmSubscriptionTableViewCell.h"
+#import <AWHVideoPlayer/AWHVPAlarmSubscriptionTableViewCell.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
