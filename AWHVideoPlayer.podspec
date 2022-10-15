@@ -197,6 +197,7 @@ Pod::Spec.new do |s|
   s.dependency 'AWHIJKPlayer'
   s.dependency 'AWHReportModule'
   s.dependency 'FQPhotoAlbum'
+  s.dependency "CocoaAsyncSocket"
   
   #高德地图
   #s.dependency 'AMap3DMap'
