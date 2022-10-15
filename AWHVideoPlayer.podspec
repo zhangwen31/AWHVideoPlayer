@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
   
   s.vendored_frameworks = ['AWHVideoPlayer.framework']
   s.source_files = 'AWHVideoPlayer.framework/Headers/*h'
-  s.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
+  s.pod_target_xcconfig = {'VALID_ARCHS' => 'armv7 arm64'}
   s.static_framework = true
   
   s.swift_version='5.0'
