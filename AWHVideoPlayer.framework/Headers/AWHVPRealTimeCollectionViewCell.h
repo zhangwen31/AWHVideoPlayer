@@ -16,6 +16,8 @@ typedef void(^ReturnSelectTitle)(NSString *title,IJKFFMoviePlayerController *pla
 @property(nonatomic,copy)ReturnSelectTitle ReturnSelectTitle;
 @property(nonatomic,copy)void (^openSoundClick)(AWHVPVideoPlayerModel *model);
 @property(nonatomic,copy)void (^selectClick)(AWHVPVideoPlayerModel *model);
+@property(nonatomic,copy)void (^reconnectClick)(AWHVPVideoPlayerModel *model);
+@property(nonatomic,copy)void (^fullClearBackClick)(void);
 //静音
 - (void)mute;
 @end

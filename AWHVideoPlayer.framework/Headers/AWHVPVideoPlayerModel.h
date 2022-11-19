@@ -9,8 +9,8 @@
 
 typedef NS_ENUM(NSInteger, AWHVPMovieScalingMode) {
     AWHVPMovieScalingModeNone               = 0,       // No scaling
-    AWHVPMovieScalingModeAspectFit          = 1,  // Uniform scale until one dimension fits
-    AWHVPMovieScalingModeFill               = 2,       // Non-uniform scale. Both render dimensions will exactly match the visible bounds
+    AWHVPMovieScalingModeAspectFit          = 2,  // Uniform scale until one dimension fits
+    AWHVPMovieScalingModeFill               = 1,       // Non-uniform scale. Both render dimensions will exactly match the visible bounds
     AWHVPMovieScalingModeAspectFill         = 3, // Uniform scale until the movie fills the visible bounds. One dimension may have clipped contents
 };
 

@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)IJKFFMoviePlayerController *player;
 
 @property(nonatomic,copy)void (^clearBackClick)(void);
+@property(nonatomic,copy)void (^reconnectClick)(AWHVPVideoPlayerModel *model);
 
 @end
 
