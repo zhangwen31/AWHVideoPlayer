@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <AWHReportModule/AWHRMAlarmTypeModel.h>
 #import <AWHBoneRuntime/AWHBRExpandButton.h>
-typedef void(^SelectBtn)(NSString *string);
+typedef void(^AWHVPAlarmTypeSelectBtn)(NSString *string);
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,strong)AWHRMAlarmTypeModel *model;
 @property(nonatomic,strong)UILabel *nameLab;
-@property(nonatomic, copy)SelectBtn SelectBtn;
+@property(nonatomic, copy)AWHVPAlarmTypeSelectBtn SelectBtn;
 @property(nonatomic, strong)AWHBRExpandButton*selectButton;
 @property(nonatomic, strong)UIColor *contentBackgroundColor;
 

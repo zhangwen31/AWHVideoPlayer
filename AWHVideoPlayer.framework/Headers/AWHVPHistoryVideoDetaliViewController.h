@@ -6,6 +6,7 @@
 //
 
 #import <AWHBBasicBusiness/AWHBBBaseViewController.h>
+#import <AWHBPublicBusiness/AWHVPCarVideoModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)NSString *videoType;
 @property(nonatomic,copy) NSString *carId;
 @property(nonatomic,copy) NSString *titleStr;
+@property(nonatomic,strong)AWHVPCarVideoModel *videoModel;
+@property(nonatomic,strong)NSArray *videoArray;
+@property(nonatomic, assign)BOOL isTerminalVideo;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHVideoPlayer"
-  s.version      = "0.0.4"
+  s.version      = "1.0.0"
   s.summary      = "A short description of AWHVideoPlayer."
 
   # This description is used to generate tags and improve search results.
@@ -154,7 +154,7 @@ Pod::Spec.new do |s|
   #  其名称的lib前缀。
   #
 
-  s.framework  = "Foundation"
+  s.framework  = "Foundation", "IJKMediaFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 #  s.vendored_framework = "#{s.name}.framework"
 
@@ -172,6 +172,25 @@ Pod::Spec.new do |s|
   #  您可以包含多个依赖项以确保其正常工作。
 
    s.requires_arc = true
+   
+   # 公共头文件导进组件.pch文件中,加入后，执行pod install, MXStatService-prefix.pch 文件中就有这些头文件
+   s.prefix_header_contents = <<-EOS
+   #import <AWHBoneRuntime/AWHBoneRuntime.h>
+   #import <AWHBoneRouter/AWHBoneRouter.h>
+   #import <AWHBNetworkRequest/AWHBNetworkRequest.h>
+   #import <AWHBBasicBusiness/AWHBBasicBusiness.h>
+   #import <AWHBPublicBusiness/AWHBPublicBusiness.h>
+   
+   #import <MBProgressHUD/MBProgressHUD.h>
+   #import <Masonry/Masonry.h>
+   #import <MJExtension/MJExtension.h>
+   #import <SDWebImage/SDWebImage.h>
+   #import <YYModel/YYModel.h>
+   #import <MJRefresh/MJRefresh.h>
+   #import <AWHBoneResources/AWHBoneResources.h>
+   #import <AWHReportModule/AWHReportModule.h>
+   
+   EOS
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
@@ -187,17 +206,14 @@ Pod::Spec.new do |s|
   s.dependency 'MBProgressHUD'
   s.dependency 'Masonry'
   s.dependency 'MJExtension'
-  s.dependency 'JJException'
   s.dependency 'YYImage'
-  s.dependency 'YYWebImage'
   s.dependency 'AFNetworking'
   s.dependency 'Charts'
   s.dependency 'MJRefresh'
   s.dependency 'AWHBoneResources'
-  s.dependency 'AWHIJKPlayer'
+  s.dependency 'IJKMediaFramework'
   s.dependency 'AWHReportModule'
   s.dependency 'FQPhotoAlbum'
-  s.dependency "CocoaAsyncSocket"
   
   #高德地图
   #s.dependency 'AMap3DMap'
