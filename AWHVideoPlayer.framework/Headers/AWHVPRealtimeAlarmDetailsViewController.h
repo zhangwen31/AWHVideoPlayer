@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AWHVPRealtimeAlarmDetailsViewController : AWHBBBaseViewController
 
 @property(nonatomic,copy)NSString *alarmType;
+@property(nonatomic,copy)NSString *name;
 
 @end
 
